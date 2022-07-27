@@ -200,28 +200,22 @@ section {
   padding-top: 160px;
 }
 section h2.section-title {
-  font-family: "Lobster Two", cursive;
-  font-size: 50px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
-  padding: 8px 32px 18px;
-  border: 2px solid #000;
-  margin-bottom: 40px;
+  padding: 1rem 2rem calc(1rem + 10px);
+  background: #fff100;
+  font-size: 25px;
 }
-section h2.section-title:after {
+section h2.section-title:before {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: -7px;
+  left: -7px;
   width: 100%;
-  height: 10px;
+  height: 100%;
   content: "";
-  border-top: 2px solid #000;
-  background-image: repeating-linear-gradient(-45deg, #000, #000 1px, transparent 2px, transparent 5px);
-  background-size: 7px 7px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  border: 4px solid #000;
 }
 section .container {
   max-width: 1024px;
@@ -252,6 +246,23 @@ section .container {
 .works .container {
   justify-content: space-between;
 }
+.works .container .item {
+  width: 30%;
+}
+.works .container .item-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.works .container .item .cover {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px;
+  margin: 20px 0;
+}
 
 /* Image */
 .section-image img {
@@ -264,6 +275,19 @@ section .container {
 }
 
 /* access */
+.access .container .info div {
+  width: 100%;
+}
+.access .container .info .access-link {
+  display: flex;
+  flex-direction: column;
+}
+.access .container iframe {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+}
+
 /* Footer */
 .site-footer {
   width: 100%;
