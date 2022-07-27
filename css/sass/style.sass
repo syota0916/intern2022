@@ -41,6 +41,7 @@ img
 /* header */
 
 #header
+  position: fixed
   justify-content: space-between
   align-items: center
   height: 70px
@@ -63,10 +64,19 @@ img
 
   #menuBtn
     display: none
+  .nav-menu .nav-link
+    font-size: 20px
+    font-weight: bold
+    height: 70px
+    color: #ffffff
+    padding: 16px
+    filter: drop-shadow( #00000060 1px 1px 3px)
 
-  // TODO:穴埋め1
 
-/* firstview */
+    &:hover
+      text-decoration: underline
+      
+  /* firstview */
 
 .swiper-container
   position: relative
